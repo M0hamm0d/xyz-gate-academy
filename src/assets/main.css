@@ -1,0 +1,30 @@
+#app {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+}
+
+:root {
+  /* Default Dark Mode Theme */
+  --bg-primary: #0a0a0a; /* Pure Jet Black */
+  --bg-surface: #141414; /* Deep Black for cards */
+  --text-main: #f5f5f5; /* Light Grey for headings */
+  --text-muted: rgba(245, 245, 245, 0.5); /* Faded text */
+  --accent: #00bfa6; /* Electric Teal */
+  --accent-tint: rgba(0, 191, 166, 0.1);
+  --border-subtle: rgba(245, 245, 245, 0.03);
+}
+
+/* Light Mode Overrides */
+[data-theme='light'] {
+  --bg-primary: #f5f5f5; /* Light Grey becomes background */
+  --bg-surface: #ffffff; /* White for cards/sections */
+  --text-main: #0a0a0a; /* Pure Jet Black for headings */
+  --text-muted: rgba(10, 10, 10, 0.6); /* Dark muted text */
+  --accent: #00bfa6; /* Electric Teal stays vibrant! */
+  --accent-tint: rgba(0, 191, 166, 0.08);
+  --border-subtle: rgba(10, 10, 10, 0.05);
+}
