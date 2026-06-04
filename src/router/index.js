@@ -14,6 +14,16 @@ const router = createRouter({
       name: 'about',
       component: () => import('@/views/AboutPage.vue'),
     },
+    {
+      path: '/academic',
+      name: 'academic',
+      component: () => import('@/views/AcademicView.vue'),
+    },
+    {
+      path: '/admissions',
+      name: 'admissions',
+      component: () => import('@/views/AdmissionsView.vue'),
+    },
   ],
   // Handle scrolling when navigating to anchors (hashes).
   // Provides smooth scrolling and accounts for a fixed header offset.
